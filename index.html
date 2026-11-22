@@ -10,6 +10,142 @@
 <style>.definition{font-size:14px;color:var(--muted);line-height:1.45;margin:8px 0 0;max-width:620px;font-weight:400;letter-spacing:0}.deckbtn{min-height:56px}.practice-link,.skippractice,.retry{min-height:44px;border:1px solid var(--line);border-radius:12px;background:white;padding:11px 15px;font-weight:800}.practice-link{display:block;margin-top:12px;border-color:#ffffff35;background:#ffffff12;color:white}.practice-link:hover,.skippractice:hover,.retry:hover{border-color:var(--purple);background:#faf8ff}.practice-note{font-size:12px;color:#c7c0dc;margin:10px 0 0}.practice-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}.retry{display:none;color:var(--purple)}.retry.show{display:inline-flex;align-items:center}.feedback p{line-height:1.6}.feedback .explain-label{color:var(--ink)}.recapgrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;text-align:left;margin:15px auto 22px;max-width:760px}.recapcard{border:1px solid var(--line);border-radius:13px;padding:12px;background:#fbfaff}.recapcard.mastered{background:#effcf3;border-color:#c8efd5}.recapcard.review{background:#fff8ef;border-color:#f0dfbc}.recapstatus{font-size:11px;font-weight:900;letter-spacing:.4px;text-transform:uppercase;color:var(--green)}.recapcard.review .recapstatus{color:#936414}.recapprinciple{font-size:13px;font-weight:900;margin:4px 0}.recapdefinition{font-size:12px;color:var(--muted);line-height:1.45}.total{flex:1}.gamepanel h2:focus{outline:none}@media(max-width:680px){.intro{min-height:0;padding:26px 20px 24px}.intro .mascot{display:none}.deckgrid{grid-template-columns:1fr;gap:8px}.deckbtn{min-height:52px;padding:12px 14px}.practice-link{width:100%}.choice{min-height:64px;padding:14px}.choice strong{font-size:15px}.choice span{font-size:14px;line-height:1.4}.definition{font-size:14px}.recapgrid{grid-template-columns:1fr}.practice-actions>*{width:100%;justify-content:center}.totals{flex-wrap:wrap}.total{flex:1 1 38%}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}.review-button{display:none;margin:10px auto 0}</style><style>
 .visual-comparison{display:none;margin:22px 0 8px;border-top:1px solid var(--line);padding-top:19px}.visual-comparison.show{display:block}.visual-comparison h3{font-size:18px;margin:0 0 12px;letter-spacing:-.3px}.visual-intro{font-size:13px;color:var(--muted);margin:-5px 0 14px;line-height:1.45}.visual-pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.visual-card{margin:0;padding:12px;border:1px solid var(--line);border-radius:16px;background:#fff}.visual-card.good{background:#f3fbf5;border-color:#c9ead3}.visual-card.bad{background:#fff7f4;border-color:#f0d6ce}.visual-badge{font-size:11px;font-weight:900;letter-spacing:.35px;text-transform:uppercase;margin:0 0 9px;display:flex;align-items:center;gap:6px}.visual-card.good .visual-badge{color:#23714d}.visual-card.bad .visual-badge{color:#9b4c40}.mini-screen{overflow:hidden;border:1px solid #e4e0ec;border-radius:12px;background:#fff;box-shadow:0 5px 16px #29213b0b}.mini-topbar{height:31px;display:flex;align-items:center;gap:8px;padding:0 10px;background:#f4f1fb;border-bottom:1px solid #e8e4ef;color:#716b82;font-size:11px}.mini-window-dots{display:flex;gap:3px}.mini-window-dots i{width:6px;height:6px;border-radius:50%;background:#c8c1d9}.mini-app{font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1}.mini-menu{font-size:15px;line-height:1}.mini-content{padding:12px}.mini-titleline{display:flex;align-items:center;gap:9px}.mini-icon{width:34px;height:34px;flex:0 0 34px;display:grid;place-items:center;border-radius:10px;background:#f1edfc;font-size:19px}.visual-card.good .mini-icon{background:#e6f7ec}.visual-card.bad .mini-icon{background:#ffede8}.mini-copy{min-width:0}.mini-title{font-size:13px;font-weight:900;line-height:1.25;color:var(--ink)}.mini-detail{font-size:11px;line-height:1.35;color:var(--muted);margin-top:3px}.mini-status{display:inline-flex;align-items:center;gap:5px;margin-top:10px;padding:5px 8px;border-radius:8px;font-size:10px;font-weight:900}.visual-card.good .mini-status{background:#e5f7eb;color:#25734c}.visual-card.bad .mini-status{background:#fff0eb;color:#a04437}.mini-facts{list-style:none;padding:0;margin:9px 0 0;display:grid;gap:5px}.mini-facts li{font-size:11px;line-height:1.35;color:#5d5870;display:flex;gap:6px}.mini-facts li:before{font-weight:900;flex:0 0 12px}.visual-card.good .mini-facts li:before{content:'✓';color:#25875e}.visual-card.bad .mini-facts li:before{content:'!';color:#ce5d4e}.mini-progress{height:7px;border-radius:99px;background:#e9e5f0;margin:9px 0 3px;overflow:hidden}.mini-progress span{display:block;height:100%;border-radius:inherit;background:#56ae7d}.mini-actions{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}.mini-action{display:inline-flex;align-items:center;justify-content:center;min-height:28px;padding:5px 9px;border-radius:8px;background:#f0edf6;color:#57516c;font-size:10px;font-weight:900}.visual-card.good .mini-action:first-child{background:var(--purple);color:white}.visual-card.bad .mini-action:first-child{background:#f4e5e1;color:#915449}.visual-caption{font-size:12px;line-height:1.45;color:#56516b;margin-top:9px}.visual-caption strong{color:var(--ink)}
 @media(max-width:680px){.visual-pair{grid-template-columns:1fr;gap:10px}.visual-card{padding:10px}.mini-content{padding:11px}.visual-comparison h3{font-size:17px}}
+</style><style>
+/* Principle-specific visual scenes replace the repeated browser-window mockup. */
+.visual-card{padding:11px}
+.scene{min-height:184px;border-radius:13px;padding:12px;overflow:hidden;position:relative}
+.scene *{box-sizing:border-box}
+.scene-label{font-size:9px;font-weight:900;letter-spacing:.6px;text-transform:uppercase;color:#77728d}
+.scene h4{font-size:13px;line-height:1.25;margin:0;color:#28243d}
+.scene p{font-size:10px;line-height:1.4;margin:4px 0;color:#6d6880}
+.scene-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.scene-button{display:inline-flex;align-items:center;justify-content:center;min-height:26px;padding:5px 9px;border-radius:8px;background:#eeeaf7;color:#514b65;font-size:9px;font-weight:900}
+.visual-card.good .scene-button:first-child{background:#7055e8;color:#fff}
+.visual-card.bad .scene-button:first-child{background:#f4dfdb;color:#914d43}
+.scene-note{font-size:9px!important;font-weight:800!important}
+.scene-pill{display:inline-flex;padding:5px 8px;border-radius:99px;font-size:9px;font-weight:900;margin-top:8px;background:#e9e5f0;color:#57516c}
+.visual-card.good .scene-pill{background:#dcf5e5;color:#24744e}
+.visual-card.bad .scene-pill{background:#ffe5df;color:#a04437}
+.scene-upload{background:linear-gradient(145deg,#f8f6ff,#fff);border:1px solid #e4e0ef}
+.upload-file{display:flex;align-items:center;gap:9px;margin:9px 0}
+.upload-file-icon{width:38px;height:38px;border-radius:11px;background:#eee9ff;display:grid;place-items:center;font-size:22px}
+.upload-progress{height:9px;border-radius:99px;background:#e6e2ed;overflow:hidden;margin:14px 0 6px}
+.upload-progress span{display:block;height:100%;background:#4eaa78;border-radius:inherit}
+.upload-bottom{display:flex;justify-content:space-between;align-items:center;font-size:9px;color:#69647a}
+.scene-menu{background:#fbf8ef;border:1px solid #efe5c8}
+.menu-item{display:grid;grid-template-columns:54px 1fr;gap:10px;align-items:center;background:#fff;border:1px solid #eee5d5;border-radius:12px;padding:10px;margin-top:9px}
+.menu-food{width:54px;height:54px;border-radius:50%;display:grid;place-items:center;background:#f7e8be;font-size:30px}
+.menu-price{font-size:10px;font-weight:900;color:#846522;margin-top:5px}
+.scene-booking{background:#24213b;color:white}
+.scene-booking h4{color:white}
+.booking-date{display:flex;align-items:center;gap:9px;margin:10px 0;padding:9px;background:#ffffff12;border-radius:10px}
+.booking-day{background:#fff;color:#28243d;border-radius:8px;padding:6px 8px;text-align:center;font-size:9px;font-weight:900}
+.booking-day b{display:block;font-size:17px}
+.booking-detail{font-size:10px;color:#ddd8ef}
+.scene-booking .scene-label,.scene-booking p{color:#cbc4e5}
+.scene-booking .scene-button{background:#ffffffeb;color:#312b49}
+.scene-consistency{background:#f4f2fa;border:1px solid #e6e2ef}
+.consistency-pair{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:10px}
+.consistency-screen{background:#fff;border:1px solid #e5e1ed;border-radius:10px;padding:9px;min-height:85px}
+.consistency-screen span{display:block;font-size:8px;text-transform:uppercase;color:#8a849d;font-weight:900;margin-bottom:13px}
+.consistency-control{display:inline-block;border-radius:7px;padding:7px 9px;font-size:9px;font-weight:900;background:#eeeaf7;color:#514b65}
+.visual-card.good .consistency-control{background:#7055e8;color:white}
+.visual-card.bad .consistency-screen:last-child .consistency-control{background:#ffe5df;color:#9f4d43}
+.scene-review{background:#fbf6eb;border:1px solid #efdfb9}
+.review-total{font-size:23px;font-weight:900;letter-spacing:-.8px;margin:8px 0 2px;color:#28243d}
+.review-recipient{border-top:1px solid #e9dec1;border-bottom:1px solid #e9dec1;padding:8px 0;margin:8px 0;font-size:10px;color:#5d576b}
+.review-alert{padding:7px 8px;border-radius:8px;background:#fff0c7;color:#805e10;font-size:9px;font-weight:900}
+.scene-toolbar{background:#f4f6fb;border:1px solid #dfe4ef}
+.tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:7px;margin-top:11px}
+.tool-tile{background:white;border:1px solid #e4e3ec;border-radius:9px;padding:8px 4px;text-align:center;min-height:49px;font-size:9px;font-weight:800;color:#514b65}
+.tool-tile b{display:block;font-size:18px;margin-bottom:3px}
+.tool-tile.missing{border-style:dashed;color:#a19aad;background:#faf9fc}
+.scene-shortcut{background:#eff8f4;border:1px solid #d8eee3}
+.route-nodes{display:flex;align-items:center;gap:3px;margin:12px 0;flex-wrap:wrap}
+.route-node{font-size:8px;border-radius:6px;background:#fff;border:1px solid #dce9e1;padding:5px 6px;color:#625d70}
+.route-arrow{font-size:10px;color:#6a9b7d}
+.visual-card.bad .route-node{opacity:.78}
+.scene-dashboard{background:#eef1f7;border:1px solid #dfe3ec}
+.dash-head{display:flex;justify-content:space-between;align-items:center;margin:6px 0 9px}
+.dash-hero{background:#fff;border-radius:11px;padding:11px;border-left:4px solid #7055e8;box-shadow:0 3px 10px #29213b0c}
+.dash-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:8px}
+.dash-mini{background:#fff;border-radius:8px;padding:7px;font-size:8px;color:#716b80}
+.visual-card.bad .dash-mini{background:#f7e6e2}
+.visual-card.good .dash-mini:nth-child(n+3){display:none}
+.scene-error{background:#fff7f5;border:1px solid #f1d8d2}
+.error-form{background:#fff;border:1px solid #e9e4ed;border-radius:10px;padding:10px;margin-top:8px}
+.error-input{border:1px solid #d8d3e1;border-radius:7px;padding:7px 8px;margin-top:5px;font-size:9px;color:#57516c;background:#fff}
+.visual-card.bad .error-input{border-color:#df786a;background:#fff9f7}
+.error-message{font-size:9px!important;color:#a04437!important;margin-top:6px!important}
+.visual-card.good .error-message{color:#287650!important}
+.scene-help{background:#f3f4ff;border:1px solid #e1e2f5}
+.help-search{display:flex;gap:6px;background:#fff;border:1px solid #dcd9ec;border-radius:8px;padding:8px;margin-top:9px;font-size:9px;color:#8a8499}
+.help-result{background:white;border-radius:9px;padding:9px;margin-top:7px;border-left:3px solid #7055e8}
+.help-steps{display:flex;gap:5px;margin-top:8px;flex-wrap:wrap}
+.help-step{background:#e9e8f8;border-radius:6px;padding:5px 6px;font-size:8px;color:#55506c}
+.scene-status{background:#f4f1fb;border:1px solid #e2dcef}
+.status-banner{display:flex;align-items:flex-start;gap:9px;background:#fff;border-radius:11px;padding:11px;margin-top:13px}
+.status-dot{width:10px;height:10px;border-radius:50%;background:#9991aa;margin-top:3px;flex:0 0 10px}
+.visual-card.good .status-dot{background:#39a76d;box-shadow:0 0 0 4px #39a76d20}
+.visual-card.bad .status-dot{background:#d96959;box-shadow:0 0 0 4px #d9695920}
+.scene-receipt{background:#f6f4fa;border:1px solid #e6e2ed}
+.receipt-paper{background:#fff;border-radius:12px;padding:12px;margin:7px auto 0;max-width:250px;box-shadow:0 4px 12px #28243d10}
+.receipt-mark{font-size:23px;color:#2d9860}
+.visual-card.bad .receipt-mark{color:#b1abba}
+.receipt-line{display:flex;justify-content:space-between;border-top:1px dashed #ded9e7;padding-top:7px;margin-top:8px;font-size:9px;color:#6b657b}
+.scene-undo{background:#f0f2f7;border:1px solid #dfe2ea}
+.undo-mail{background:white;border-radius:8px;padding:9px;margin-top:8px;font-size:9px;color:#57516c}
+.undo-toast{position:relative;background:#28243d;color:white;padding:9px 10px;border-radius:9px;margin:8px -1px -1px;display:flex;justify-content:space-between;gap:5px;font-size:9px;font-weight:800}
+.undo-toast b{color:#ffd267}
+.scene-controls{background:#f5f3fa;border:1px solid #e5e1ed}
+.control-row{display:flex;justify-content:space-between;align-items:center;background:white;border-radius:8px;padding:8px;margin-top:6px;font-size:9px;color:#57516c}
+.toggle{width:27px;height:15px;border-radius:99px;background:#c9c5d3;padding:2px}
+.toggle i{display:block;width:11px;height:11px;border-radius:50%;background:white}
+.visual-card.good .toggle{background:#46a976}
+.visual-card.good .toggle i{margin-left:12px}
+.scene-memory{background:#eef4fb;border:1px solid #dae6f0}
+.memory-plans{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:9px}
+.memory-plan{background:#fff;border-radius:9px;padding:9px;border:1px solid #dfe7ef}
+.memory-plan strong{display:block;font-size:10px;color:#39344e}
+.memory-plan span{display:block;font-size:8px;color:#7b7589;margin-top:5px;line-height:1.4}
+.visual-card.good .memory-plan{border-color:#91cfaa}
+.scene-results{background:#f2f7f3;border:1px solid #dcebe0}
+.result-row{display:grid;grid-template-columns:28px 1fr auto;gap:7px;align-items:center;background:white;border:1px solid #e3e9e3;border-radius:8px;padding:8px;margin-top:6px}
+.result-icon{font-size:18px}
+.result-meta{font-size:8px;color:#77728d}
+.result-match{font-size:8px;font-weight:900;color:#32805a}
+.scene-order{background:#faf6ee;border:1px solid #eee4cf}
+.order-lines{background:white;border-radius:10px;padding:8px;margin-top:7px}
+.order-line{display:flex;justify-content:space-between;border-bottom:1px solid #f0edf1;padding:5px 0;font-size:9px;color:#5d576b}
+.scene-learn{background:#f4f1fb;border:1px solid #e3def0}
+.learn-progress{display:flex;gap:5px;margin:10px 0}
+.learn-progress i{height:5px;flex:1;border-radius:99px;background:#ded9e9}
+.visual-card.good .learn-progress i:first-child{background:#43a573}
+.learn-task{background:#fff;border-radius:9px;padding:10px;font-size:10px;font-weight:900;color:#514b65}
+.learn-task small{display:block;font-size:8px;color:#7b7589;font-weight:400;margin-top:4px}
+.scene-navigation{background:#29253d;color:white;display:grid;grid-template-columns:76px 1fr;gap:10px}
+.navigation-rail{display:grid;align-content:start;gap:5px}
+.navigation-rail span{padding:6px 5px;border-radius:6px;color:#d3cdea;font-size:8px}
+.navigation-rail span.active{background:#fff;color:#302a49;font-weight:900}
+.navigation-content{background:#fff;border-radius:9px;padding:9px;color:#28243d}
+.scene-navigation .scene-label{color:#c8c2dc}
+.scene-navigation .scene-pill{margin-top:6px}
+.scene-journey{background:#f4f7fb;border:1px solid #dfe6ed}
+.journey-steps{display:flex;align-items:center;gap:4px;margin:10px 0}
+.journey-step{flex:1;text-align:center;font-size:8px;color:#77728d}
+.journey-step b{display:block;width:19px;height:19px;border-radius:50%;margin:0 auto 4px;background:#e4e0eb;padding-top:4px}
+.visual-card.good .journey-step b{background:#bfe8ce;color:#256d49}
+.visual-card.bad .journey-step:last-child b{background:#ffe0d9;color:#a04437}
+@media(max-width:680px){.visual-card{padding:9px}.scene{min-height:0;padding:10px}.consistency-screen{padding:7px}.memory-plan{padding:7px}}
+</style><style>
+.scene-consistency-position{background:#f3f2f8;border:1px solid #e5e1ed}
+.position-screens{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-top:9px}
+.position-screen{position:relative;height:87px;background:#fff;border:1px solid #e6e2ec;border-radius:9px;padding:7px}
+.position-screen small{font-size:8px;color:#8a849d}
+.position-control{position:absolute;padding:6px 8px;border-radius:6px;background:#7055e8;color:#fff;font-size:8px;font-weight:900}
+.position-control.top-right{top:26px;right:6px}
+.position-control.bottom-left{bottom:6px;left:6px}
+.position-control.bottom-right{bottom:6px;right:6px}
 </style></head>
 <body>
 <div class="shell">
@@ -205,15 +341,92 @@ badCaption:"Kareem leaves unsure and frustrated by the booking.",goodCaption:"A 
 }
 };
 function escapeVisualText(value){return String(value).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}
-function visualCard(view,kind,caption){
- const badge=kind==="good"?"✓ Correct use":"✕ Incorrect use";
- const facts=(view.facts||[]).map(function(fact){return "<li>"+escapeVisualText(fact)+"</li>"}).join("");
- const actions=(view.actions||[]).filter(Boolean).map(function(action){return '<span class="mini-action">'+escapeVisualText(action)+"</span>"}).join("");
- const progress=typeof view.progress==="number"?'<div class="mini-progress" aria-hidden="true"><span style="width:'+view.progress+'%"></span></div>':"";
- const lead=kind==="good"?"Why it helps: ":"What goes wrong: ";
- return '<figure class="visual-card '+kind+'"><div class="visual-badge">'+badge+'</div><div class="mini-screen" aria-hidden="true"><div class="mini-topbar"><span class="mini-window-dots"><i></i><i></i><i></i></span><span class="mini-app">'+escapeVisualText(view.app)+'</span><span class="mini-menu">•••</span></div><div class="mini-content"><div class="mini-titleline"><span class="mini-icon">'+escapeVisualText(view.icon)+'</span><div class="mini-copy"><div class="mini-title">'+escapeVisualText(view.title)+'</div><div class="mini-detail">'+escapeVisualText(view.detail)+'</div></div></div><div class="mini-status">'+escapeVisualText(view.status)+'</div>'+progress+'<ul class="mini-facts">'+facts+'</ul><div class="mini-actions">'+actions+'</div></div></div><figcaption class="visual-caption"><strong>'+lead+'</strong>'+escapeVisualText(caption)+'</figcaption></figure>'
+const visualLayoutByTitle={
+ "The frozen upload":"upload","The strange label":"menu","Wrong room!":"booking","Two save buttons":"consistency-meaning","The accidental transfer":"review","The hidden command":"toolbar","The expert’s slow route":"shortcut","The crowded dashboard":"dashboard","The mystery error":"error","The missing help":"help","The changing checkout":"consistency-position","The repeat report":"shortcut","The ignored click":"status","Did I buy it?":"receipt","The incomplete form":"error","The vanished email":"undo","Too many notifications":"controls","The forgotten reference number":"memory","Find the right clinic":"results","The 12-click reorder":"order","First day with the scanner":"learn","Back after a month":"navigation","The frustrating booking":"journey"
+};
+function visualActions(view){return (view.actions||[]).filter(Boolean).map(function(action){return '<span class="scene-button">'+escapeVisualText(action)+'</span>'}).join("")}
+function visualFacts(view){return (view.facts||[]).map(function(fact){return '<div class="dash-mini">'+escapeVisualText(fact)+'</div>'}).join("")}
+function visualScene(view,kind,layout){
+ const icon=escapeVisualText(view.icon),title=escapeVisualText(view.title),detail=escapeVisualText(view.detail),status=escapeVisualText(view.status),actions=visualActions(view),facts=visualFacts(view),pill='<span class="scene-pill">'+status+'</span>';
+ if(layout==="upload"){
+  const width=Math.max(0,Math.min(100,Number(view.progress)||0));
+  return '<div class="scene scene-upload"><div class="scene-label">'+escapeVisualText(view.app)+'</div><div class="upload-file"><span class="upload-file-icon">'+icon+'</span><div><h4>'+title+'</h4><p>'+detail+'</p></div></div><div class="upload-progress"><span style="width:'+width+'%"></span></div><div class="upload-bottom"><span>'+status+'</span><b>'+width+'%</b></div><div class="scene-actions">'+actions+'</div></div>'
+ }
+ if(layout==="menu"){
+  return '<div class="scene scene-menu"><div class="scene-label">MENU · '+escapeVisualText(view.app)+'</div><div class="menu-item"><div class="menu-food">'+icon+'</div><div><h4>'+title+'</h4><p>'+detail+'</p><div class="menu-price">'+status+'</div></div></div><div class="scene-actions">'+actions+'</div></div>'
+ }
+ if(layout==="booking"){
+  return '<div class="scene scene-booking"><div class="scene-label">'+escapeVisualText(view.app)+'</div><h4>'+title+'</h4><div class="booking-date"><div class="booking-day">TODAY<b>2:00</b></div><div class="booking-detail">'+detail+'<br>'+status+'</div></div><p>'+((view.facts||[])[0]||"")+'</p><div class="scene-actions">'+actions+'</div></div>'
+ }
+ if(layout==="consistency-meaning"){
+  const screenA=kind==="bad"?"💾 Save":"💾 Save",screenB=kind==="bad"?"💾 Delete":"🗑 Delete";
+  return '<div class="scene scene-consistency"><div class="scene-label">SAME ICON · TWO SCREENS</div><h4>'+title+'</h4><div class="consistency-pair"><div class="consistency-screen"><span>Screen A</span><b class="consistency-control">'+screenA+'</b></div><div class="consistency-screen"><span>Screen B</span><b class="consistency-control">'+screenB+'</b></div></div><div class="scene-pill">'+status+'</div></div>'
+ }
+ if(layout==="consistency-position"){
+  const a=kind==="bad"?"top-right":"bottom-right",b=kind==="bad"?"bottom-left":"bottom-right";
+  return '<div class="scene scene-consistency-position"><div class="scene-label">CHECKOUT · '+escapeVisualText(view.app)+'</div><h4>'+title+'</h4><div class="position-screens"><div class="position-screen"><small>Step 1</small><b class="position-control '+a+'">Continue</b></div><div class="position-screen"><small>Step 2</small><b class="position-control '+b+'">Continue</b></div></div><div class="scene-pill">'+status+'</div></div>'
+ } if(layout==="review"){
+  return '<div class="scene scene-review"><div class="scene-label">'+escapeVisualText(view.app)+' · REVIEW BEFORE SENDING</div><div class="review-total">'+title+'</div><div class="review-recipient">'+detail+'</div><div class="review-alert">'+status+'</div><div class="scene-actions">'+actions+'</div></div>'
+ }
+ if(layout==="toolbar"){
+  const labels=(view.actions||[]).filter(Boolean);
+  const tiles=labels.map(function(label,i){return '<div class="tool-tile"><b>'+["✂️","🎨","✨","↻","▣","⚙️"][i%6]+'</b>'+escapeVisualText(label)+'</div>'}).join("");
+  const missing=kind==="bad"?'<div class="tool-tile missing"><b>?</b>Crop?</div>':"";
+  return '<div class="scene scene-toolbar"><div class="scene-label">'+escapeVisualText(view.app)+'</div><h4>'+title+'</h4><p>'+detail+'</p><div class="tool-grid">'+tiles+missing+'</div>'+pill+'</div>'
+ }
+ if(layout==="shortcut"){
+  const nodes=kind==="good"?'<span class="route-node">Choose saved task</span><i class="route-arrow">→</i><span class="route-node">Review</span><i class="route-arrow">→</i><span class="route-node">Done</span>':'<span class="route-node">1 · Open</span><i class="route-arrow">→</i><span class="route-node">2 · Filter</span><i class="route-arrow">→</i><span class="route-node">3 · Repeat × 8</span>';
+  return '<div class="scene scene-shortcut"><div class="scene-label">'+escapeVisualText(view.app)+'</div><h4>'+title+'</h4><p>'+detail+'</p><div class="route-nodes">'+nodes+'</div>'+pill+'<div class="scene-actions">'+actions+'</div></div>'
+ }
+ if(layout==="dashboard"){
+  return '<div class="scene scene-dashboard"><div class="scene-label">'+escapeVisualText(view.app)+'</div><div class="dash-head"><h4>'+title+'</h4><span>•••</span></div><div class="dash-hero"><p>'+detail+'</p>'+pill+'</div><div class="dash-cards">'+facts+'</div></div>'
+ }
+ if(layout==="error"){
+  return '<div class="scene scene-error"><div class="scene-label">'+escapeVisualText(view.app)+'</div><div class="error-form"><h4>'+title+'</h4><p>'+detail+'</p><div class="error-input">'+(kind==="bad"?"Enter value…":"Saved information kept")+'</div><p class="error-message">'+status+'</p><div class="scene-actions">'+actions+'</div></div></div>'
+ }
+ if(layout==="help"){
+  const steps=(view.facts||[]).map(function(fact,i){return '<span class="help-step">'+(i+1)+'. '+escapeVisualText(fact)+'</span>'}).join("");
+  return '<div class="scene scene-help"><div class="scene-label">'+escapeVisualText(view.app)+'</div><div class="help-search">⌕ &nbsp; '+(kind==="good"?title:"Search help topics…")+'</div><div class="help-result"><h4>'+title+'</h4><p>'+detail+'</p><div class="help-steps">'+steps+'</div></div>'+pill+'</div>'
+ }
+ if(layout==="status"){
+  return '<div class="scene scene-status"><div class="scene-label">'+escapeVisualText(view.app)+'</div><div class="status-banner"><i class="status-dot"></i><div><h4>'+title+'</h4><p>'+detail+'</p>'+pill+'</div></div><div class="scene-actions">'+actions+'</div></div>'
+ }
+ if(layout==="receipt"){
+  return '<div class="scene scene-receipt"><div class="scene-label">'+escapeVisualText(view.app)+'</div><div class="receipt-paper"><div class="receipt-mark">'+(kind==="good"?"✓":"…")+'</div><h4>'+title+'</h4><p>'+detail+'</p><div class="receipt-line"><span>'+status+'</span><b>'+(kind==="good"?"CONFIRMED":"PENDING")+'</b></div><div class="scene-actions">'+actions+'</div></div></div>'
+ }
+ if(layout==="undo"){
+  return '<div class="scene scene-undo"><div class="scene-label">'+escapeVisualText(view.app)+'</div><div class="undo-mail">✉ &nbsp; '+detail+'</div><h4>'+title+'</h4><div class="undo-toast">'+status+'<b>'+(kind==="good"?"UNDO":"")+'</b></div></div>'
+ }
+ if(layout==="controls"){
+  const labels=(view.facts||[]).slice(0,3);
+  const rows=labels.map(function(label,i){return '<div class="control-row"><span>'+escapeVisualText(label.split(" ").slice(0,3).join(" "))+'</span><span class="toggle"><i></i></span></div>'}).join("");
+  return '<div class="scene scene-controls"><div class="scene-label">'+escapeVisualText(view.app)+'</div><h4>'+title+'</h4><p>'+detail+'</p>'+rows+pill+'<div class="scene-actions">'+actions+'</div></div>'
+ }
+ if(layout==="memory"){
+  return '<div class="scene scene-memory"><div class="scene-label">'+escapeVisualText(view.app)+' · COMPARE</div><h4>'+title+'</h4><div class="memory-plans"><div class="memory-plan"><strong>'+title+'</strong><span>'+detail+'</span></div><div class="memory-plan"><strong>'+(kind==="good"?"Keep visible":"Other plan")+'</strong><span>'+status+'</span></div></div><div class="scene-actions">'+actions+'</div></div>'
+ }
+ if(layout==="results"){
+  return '<div class="scene scene-results"><div class="scene-label">'+escapeVisualText(view.app)+'</div><h4>'+title+'</h4>'+[0,1].map(function(i){return '<div class="result-row"><span class="result-icon">'+icon+'</span><div><b>'+title+'</b><div class="result-meta">'+detail+'</div></div><span class="result-match">'+(kind==="good"?"✓ MATCH":"…")+'</span></div>'}).join("")+'</div>'
+ }
+ if(layout==="order"){
+  return '<div class="scene scene-order"><div class="scene-label">'+escapeVisualText(view.app)+'</div><h4>'+title+'</h4><div class="order-lines"><div class="order-line"><span>'+detail+'</span><b>× 1</b></div><div class="order-line"><span>'+status+'</span><b>✓</b></div></div><div class="scene-actions">'+actions+'</div></div>'
+ }
+ if(layout==="learn"){
+  return '<div class="scene scene-learn"><div class="scene-label">'+escapeVisualText(view.app)+' · FIRST TASK</div><h4>'+title+'</h4><p>'+detail+'</p><div class="learn-progress"><i></i><i></i><i></i></div><div class="learn-task">1 &nbsp; '+(kind==="good"?"Scan a document":"Which icon starts Scan?")+'<small>'+status+'</small></div><div class="scene-actions">'+actions+'</div></div>'
+ }
+ if(layout==="navigation"){
+  return '<div class="scene scene-navigation"><div class="navigation-rail"><span>Home</span><span class="active">'+(kind==="good"?"Bills":"•••")+'</span><span>Plans</span><span>Help</span></div><div class="navigation-content"><div class="scene-label">'+escapeVisualText(view.app)+'</div><h4>'+title+'</h4><p>'+detail+'</p>'+pill+'</div></div>'
+ }
+ if(layout==="journey"){
+  return '<div class="scene scene-journey"><div class="scene-label">'+escapeVisualText(view.app)+'</div><h4>'+title+'</h4><p>'+detail+'</p><div class="journey-steps"><div class="journey-step"><b>1</b>Choose</div><div class="journey-step"><b>2</b>Review</div><div class="journey-step"><b>3</b>Confirm</div></div>'+pill+'<div class="scene-actions">'+actions+'</div></div>'
+ }
+ return '<div class="scene scene-status"><div class="scene-label">'+escapeVisualText(view.app)+'</div><h4>'+title+'</h4><p>'+detail+'</p>'+pill+'<div class="scene-actions">'+actions+'</div></div>'
 }
-function renderVisualComparison(m,containerId,pairId){const example=visualExamples[m.title];if(!example)return;$(pairId).innerHTML=visualCard(example.bad,"bad",example.badCaption)+visualCard(example.good,"good",example.goodCaption);$(containerId).classList.add("show")}function definitionFor(m){const group=missions.filter(x=>x.deck===m.deck),i=group.indexOf(m);return definitions[m.deck][i]||''}
+function visualCard(view,kind,caption,layout){
+ const badge=kind==="good"?"✓ Correct use":"✕ Incorrect use";
+ return '<figure class="visual-card '+kind+'"><div class="visual-badge">'+badge+'</div>'+visualScene(view,kind,layout)+'<figcaption class="visual-caption"><strong>'+(kind==="good"?"Why it helps: ":"What goes wrong: ")+'</strong>'+escapeVisualText(caption)+'</figcaption></figure>'
+}
+function renderVisualComparison(m,containerId,pairId){const example=visualExamples[m.title];if(!example)return;const layout=visualLayoutByTitle[m.title]||"dashboard";$(pairId).innerHTML=visualCard(example.bad,"bad",example.badCaption,layout)+visualCard(example.good,"good",example.goodCaption,layout);$(containerId).classList.add("show")}function definitionFor(m){const group=missions.filter(x=>x.deck===m.deck),i=group.indexOf(m);return definitions[m.deck][i]||''}
 function loadBest(){try{return Number(localStorage.getItem('uxRescueBestPercentV2')||0)}catch{return 0}}
 function saveBest(value){try{localStorage.setItem('uxRescueBestPercentV2',String(value))}catch{}}
 function practiceSeen(){try{return localStorage.getItem('uxRescuePracticeSeenV1')==='yes'}catch{return false}}
